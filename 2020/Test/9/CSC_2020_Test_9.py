@@ -55,6 +55,8 @@ nd_output = nd_input
 # поэтому заменим их в выходном словаре
 # предварительно поменяв при этом местами ключи и значения словаря
 nd_output = {key: value for value, key in nd_output.items()}
+# обратный словарь для миль
+nd_input_inverted = {key: value for value, key in nd_input.items()}
 nd_output[1] = 'один'
 nd_output[2] = 'два'
 
@@ -222,7 +224,11 @@ def make_replace(s):
     s_info = get_miles(s)
 
     miles_num, miles_wordform = s_info[0], s_info[1]
-    miles_words = num2word(miles_num)
+    # для миль преобразование делаем с использованием своего словаря
+    # поскольку "километр" и "миля" разных родов
+    # и прошлый вариант кода не работал бы для примеров,
+    # содержащих склоняемые числительные типа один/одна и два/две
+    miles_words = num2word(miles_num, dictionary=nd_input_inverted)
     miles = miles_words + " " + miles_wordform
 
     km_num = miles2km(miles_num)
