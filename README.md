@@ -8,7 +8,7 @@
 |Year|Type|1|2|3|4|5|6|7|8|9|10|11|12
 -|-|-|-|-|-|-|-|-|-|-|-|-|-
 |**2016**|Test|S|S|-|-|S|-|[V](https://github.com/xoxai/CSC_Solutions/tree/master/2016/Test/7)|-|S|S|N|N
-||Exam|S|-|S|-|-|-|-|-|-|-|N|N
+||Exam|[V](https://github.com/xoxai/CSC_Solutions/tree/master/2016/Exam/1)|-|S|-|-|-|-|-|-|-|N|N
 |**2017**|Test|-|-|-|-|-|-|-|-|-|-|N|N
 ||Exam|-|-|-|-|-|-|-|-|-|-|N|N
 |**2018**|Test|-|-|-|-|-|-|-|-|-|-|N|N
